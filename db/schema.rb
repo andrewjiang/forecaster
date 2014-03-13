@@ -11,12 +11,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140313080755) do
+ActiveRecord::Schema.define(version: 20140313182812) do
 
   create_table "signups", force: true do |t|
-    t.string   "email"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "email"
+    t.string   "referral"
+    t.string   "referer"
   end
 
 end

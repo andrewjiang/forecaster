@@ -1,14 +1,141 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <title>Forecaster</title>
-  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>Forecaster</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta property="og:title" content=" - " />
+	<meta property="og:type" content="company" />
+	<meta property="og:site_name" content=" - " />
+	<meta property="og:description" content="" />
+	<meta property="og:url" content="www.getforecaster.com" />
+	<meta property="og:image" content="" />
+
+	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+	<%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
+  <!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+   
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- Favicons
+	================================================== -->
+	<%= favicon_link_tag 'favicon.ico', rel: 'shortcut icon' %>
+	<link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+
+	<!-- Load jQuery
+  	================================================== -->
+  	<% javascript_include_tag "modernizr" %>
+  	<% javascript_include_tag "bootstrap" %>
+    <% javascript_include_tag "jqueryScroll" %>
+  	
+
+
+    
 </head>
-<body>
+<body id="mainsite">
 
-<%= yield %>
+	<!-- Primary Page Layout
+	================================================== -->
 
+	<!-- header section -->
+	<header id="header-section">
+        
+	<div class="grid-container">
+    	<!-- main-header -->
+		<div class="main-header clearfix">
+        	<div class="grid-30 mobile-grid-100 tablet-grid-30">
+                <div class="site-branding ">	
+                    <h1><a href="/">
+                    	<i class="icon-bar-chart main-icon" style="color: #1caf9a;"></i> 
+                    	<span class="forecaster-logo">Forecaster</span></a></h1>
+                </div>
+            </div>
+            
+            <!-- navigation -->
+            <div class="grid-70 hide-on-mobile tablet-grid-70">
+				<nav id="ut-navigation">
+                    <ul>
+                        <li><a class="selected" href="#mainsite" class="scroll-link">Home</a></li>
+                        <li><a href="#screenshot" class="scroll-link">Features</a></li>
+                        <li><a href="#testimonial" class="scroll-link">Customers</a></li>
+                    </ul>
+        		</nav>
+        	</div><!-- close navigation -->
+            
+    	</div><!-- close main-header -->        
+	</div><!-- close container -->
+	</header><!-- close header section -->
+
+	<%= yield %>
+
+	<!-- Footer Section -->
+	<footer class="footer">
+		<div class="grid-container">
+        
+			<div class="grid-75 hide-on-mobile hide-on-tablet">
+            
+                <!-- footer site branding -->
+                <div class="site-branding">	
+                    <h1><a href="/">
+                    	<i class="icon-bar-chart main-icon" style="color: #1caf9a;"></i> 
+                    	<span class="forecaster-logo-footer">Forecaster</span></a></h1>
+                </div><!-- close footer site branding -->
+       </div>
+       <div class="grid-25 hide-on-mobile hide-on-tablet">
+            <p class="copyright">Copyright &copy; 2012 <a href="http://unitedthemes.com">Get Forecaster LLC</a>. <br>All rights reserved.</p>
+            
+            </div>
+      </div><!-- close container -->
+       
+          
+            
+             <!-- mobile copyright -->
+            <div class="hide-on-desktop mobile-grid-100 tablet-grid-100">
+            	<div class="mobile-copyright">
+                	<p class="copyright">Copyright &copy; 2013 <a href="http://unitedthemes.com">UNITED THEMES</a>. All rights reserved.</p>
+                </div>
+            </div>
+            <!-- close mobile copyright -->           
+         	
+		</div><!-- close container -->
+	</footer><!-- close footer -->
+
+<!-- Load Javascript
+  	================================================== -->
+  	<% javascript_include_tag "classie" %>
+  	<% javascript_include_tag "cbpScroller" %>
+  	<% javascript_include_tag "jquery.custom" %>
+	
+    <script type="text/javascript">
+    /* <![CDATA[ */
+		
+		(function($){
+	
+		"use strict";
+    		
+			$(document).ready(function(){
+	
+
+			});
+			
+		})(jQuery);
+		
+	 /* ]]> */	
+    </script>
+    
+<!-- End Document
+================================================== -->
 </body>
 </html>

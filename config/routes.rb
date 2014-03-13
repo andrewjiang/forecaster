@@ -1,5 +1,10 @@
 Forecaster::Application.routes.draw do
+  resources :signups
+
   root to: "home#index"
+
+  get '/:referrer_id' => 'home#index', :constraints => {:referrer_id => /[a-zA-Z0-9]{6}/}
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
