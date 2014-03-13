@@ -11,7 +11,6 @@
 // about supported directives.
 //
 //= require jquery
-//= require bootstrap
 //= require jquery_ujs
 //= require turbolinks
 //= require modernizr
@@ -23,5 +22,6 @@ $(document).ready(function(){
     }, 500);
     return false;
 	});
+	$('#myModal').modal();
 });
 

@@ -35,17 +35,15 @@
 	<!-- Favicons
 	================================================== -->
 
-	<% favicon_link_tag 'favicon.ico', rel: 'shortcut icon' %>
-	<% favicon_link_tag 'apple-touch-icon.png', rel: 'apple-touch-icon' %>
-	<% favicon_link_tag 'apple-touch-icon-72x72.png', rel: 'apple-touch-icon', :sizes=>"72x72" %>
-	<% favicon_link_tag 'apple-touch-icon-114x114.png', rel: 'apple-touch-icon', :sizes=>"114x114"  %>
+	<%= favicon_link_tag 'favicon.ico', rel: 'shortcut icon' %>
 	<link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
 
 	<!-- Load jQuery
   	================================================== -->
-  	
-  	<% javascript_include_tag "modernizr" %>
-  	<% javascript_include_tag "respond.src" %>
+  	<%= javascript_include_tag "jquery.scrollTo.min" %>
+  	<%= javascript_include_tag "modernizr" %>
+  	<%= javascript_include_tag "respond.src" %>
+  	<%= javascript_include_tag "bootstrap" %>
   	
 
 
@@ -94,7 +92,7 @@
             <header class="entry-header">
             <h1 class="product-title">Revenue forecasting done right</h1>
             
-            <p class="product-slogan">Accurately and efficiently project revenues <span style="color: #3498db;">based on historical data</span>, intelligently parsed with Forecaster. Sign up for <a href="#">early access</a></p>
+            <p class="product-slogan">Accurate and efficient revenue projections <span style="color: #3498db;">based on historical data</span>, intelligently parsed with Forecaster. Sign up for <a href="#">early access</a></p>
 
 						<div class="signup-div">
 						<%= form_tag do %>
@@ -263,9 +261,9 @@
 
 <!-- Load Javascript
   	================================================== -->
-  	<% javascript_include_tag "classie" %>
-  	<% javascript_include_tag "cbpScroller" %>
-  	<% javascript_include_tag "jquery.custom" %>
+  	<%= javascript_include_tag "classie" %>
+  	<%= javascript_include_tag "cbpScroller" %>
+  	<%= javascript_include_tag "jquery.custom" %>
 	
     <script type="text/javascript">
     /* <![CDATA[ */

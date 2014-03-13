@@ -210,6 +210,7 @@ img {
 .entry-title {
 	margin-bottom:20px;
 	font-weight:normal;
+	font-size: 32px;
 }
 .entry-slogan {
 	color:#58D68D;
@@ -245,7 +246,7 @@ img {
 	color:#777777;
 }
 .product-link {
-	background:#58D68D;
+	background:none;
   	border: none;
 	display: inline-block;
 	font-size: 1.4em;
@@ -263,8 +264,8 @@ img {
 		-moz-transition:0.2s background linear;
 			transition:0.2s background linear;
 }
-.product-link:hover {
-	background:#282828;
+.signup-div:hover {
+	background:#1caf9a;
 	color:#FFFFFF;
 }
 .product-link i {
@@ -578,3 +579,5 @@ img {
   padding-left: 0;
   padding-right: 0;
 }
+
+
