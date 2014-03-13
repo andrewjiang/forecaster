@@ -35,15 +35,14 @@
 	<!-- Favicons
 	================================================== -->
 
-	<%= favicon_link_tag 'favicon.ico', rel: 'shortcut icon' %>
+	<% favicon_link_tag 'favicon.ico', rel: 'shortcut icon' %>
 	<link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
 
 	<!-- Load jQuery
   	================================================== -->
-  	<%= javascript_include_tag "jquery.scrollTo.min" %>
-  	<%= javascript_include_tag "modernizr" %>
-  	<%= javascript_include_tag "respond.src" %>
-  	<%= javascript_include_tag "bootstrap" %>
+  	<% javascript_include_tag "modernizr" %>
+  	<% javascript_include_tag "bootstrap" %>
+    <% javascript_include_tag "jqueryScroll" %>
   	
 
 
@@ -261,9 +260,9 @@
 
 <!-- Load Javascript
   	================================================== -->
-  	<%= javascript_include_tag "classie" %>
-  	<%= javascript_include_tag "cbpScroller" %>
-  	<%= javascript_include_tag "jquery.custom" %>
+  	<% javascript_include_tag "classie" %>
+  	<% javascript_include_tag "cbpScroller" %>
+  	<% javascript_include_tag "jquery.custom" %>
 	
     <script type="text/javascript">
     /* <![CDATA[ */

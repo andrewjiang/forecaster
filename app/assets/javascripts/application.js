@@ -13,7 +13,13 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
-//= require modernizr
+//= require 'modernizr'
+//= require 'jqueryScroll'
+//= require 'cbpScroller'
+//= require 'classie'
+//= require 'jquery.custom'
+//= require 'bootstrap'
+
 
 $(document).ready(function(){
 	$('a.scroll-link').click(function(){

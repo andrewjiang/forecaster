@@ -29,8 +29,6 @@ Forecaster::Application.configure do
   # Do not fallback to assets pipeline if a precompiled asset is missed.
   config.assets.compile = true
 
-  config.assets.initialize_on_precompile = false
-
   config.assets.precompile << /\.(?:svg|eot|woff|ttf)$/
 
   # Generate digests for assets URLs.
