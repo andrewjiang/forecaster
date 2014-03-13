@@ -1,0 +1,44 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.forecaster-logo{
+	font-size: 46px;
+	font-family: "Lato", 'Lucida Grande', 'Lucida Sans Unicode', Helvetica, sans-serif;
+	font-size: 700;
+	letter-spacing: -1.5px;
+	color: #fafbfc;
+	line-height: 30px;
+	margin: 0;
+	border-bottom: 4px solid #1d2939;
+}
+.forecaster-logo-footer{
+	font-size: 32px;
+	font-family: "Lato", 'Lucida Grande', 'Lucida Sans Unicode', Helvetica, sans-serif;
+	font-size: 700;
+	letter-spacing: -1.5px;
+	color: #fafbfc;
+	line-height: 30px;
+	margin: 0;
+	border-bottom: 4px solid #1d2939;
+}
+#screenshot{
+	margin-bottom: 40px;
+	-webkit-box-shadow: 3px 3px 15px 2px rgba(0,0,0,0.75);
+	-moz-box-shadow: 3px 3px 15px 2px rgba(0,0,0,0.75);
+	box-shadow: 3px 3px 15px 2px rgba(0,0,0,0.75);
+	max-height: 450px;
+}
+.email-input{
+	padding: 13px 15px;
+	width: 250px;
+	font-size: 18px;
+	border: none;
+	margin-left: 2px;
+}
+.signup-div{
+	background-color: #58D68D;
+	padding: 0;
+	margin: 0;
+	display: inline-block;
+}

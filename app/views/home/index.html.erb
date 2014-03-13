@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+
+<!--
+=======================================================================================
+ Trenton Landing Page Template by United Themes (http://www.unitedthemes.com)
+ Marcel Moerkens & Matthias Nettekoven 
+=======================================================================================
+-->
+
+<head>
+
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>Forecaster</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta property="og:title" content=" - " />
+	<meta property="og:type" content="company" />
+	<meta property="og:site_name" content=" - " />
+	<meta property="og:description" content="" />
+	<meta property="og:url" content="www.getforecaster.com" />
+	<meta property="og:image" content="" />
+
+	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+   
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- Favicons
+	================================================== -->
+
+	<% favicon_link_tag 'favicon.ico', rel: 'shortcut icon' %>
+	<% favicon_link_tag 'apple-touch-icon.png', rel: 'apple-touch-icon' %>
+	<% favicon_link_tag 'apple-touch-icon-72x72.png', rel: 'apple-touch-icon', :sizes=>"72x72" %>
+	<% favicon_link_tag 'apple-touch-icon-114x114.png', rel: 'apple-touch-icon', :sizes=>"114x114"  %>
+	<link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+
+	<!-- Load jQuery
+  	================================================== -->
+  	
+  	<% javascript_include_tag "modernizr" %>
+  	<% javascript_include_tag "respond.src" %>
+  	
+
+
+    
+</head>
+<body id="mainsite">
+
+	<!-- Primary Page Layout
+	================================================== -->
+
+	<!-- header section -->
+	<header id="header-section">
+        
+	<div class="grid-container">
+    	<!-- main-header -->
+		<div class="main-header clearfix">
+        	<div class="grid-30 mobile-grid-100 tablet-grid-30">
+                <div class="site-branding ">	
+                    <h1><a href="index.htm">
+                    	<i class="icon-bar-chart main-icon" style="color: #1caf9a;"></i> 
+                    	<span class="forecaster-logo">Forecaster</span></a></h1>
+                </div>
+            </div>
+            
+            <!-- navigation -->
+            <div class="grid-70 hide-on-mobile tablet-grid-70">
+				<nav id="ut-navigation">
+                    <ul>
+                        <li><a class="selected" href="#mainsite" class="scroll-link">Home</a></li>
+                        <li><a href="#screenshot" class="scroll-link">Features</a></li>
+                        <li><a href="#testimonial" class="scroll-link">Customers</a></li>
+                    </ul>
+        		</nav>
+        	</div><!-- close navigation -->
+            
+    	</div><!-- close main-header -->        
+	</div><!-- close container -->
+	</header><!-- close header section -->
+
+	<!-- product section -->
+    <section class="product">
+    	<div class="grid-container">
+    		<div class="grid-100 mobile-grid-100 tablet-grid-100">
+            
+            <!-- entry-header -->
+            <header class="entry-header">
+            <h1 class="product-title">Revenue forecasting done right</h1>
+            
+            <p class="product-slogan">Accurately and efficiently project revenues <span style="color: #3498db;">based on historical data</span>, intelligently parsed with Forecaster. Sign up for <a href="#">early access</a></p>
+
+						<div class="signup-div">
+						<%= form_tag do %>
+							<%= text_field_tag "email-signup", nil, :class=>"email-input", :placeholder=>"Enter your email" %>
+	            <button class="product-link">Sign up for early access<i class="icon-user"></i></button>
+         		<% end %>
+          	</div>
+
+            </header>
+            <!-- close entry-header -->
+            
+            <!-- product image -->
+            <%= image_tag "screenshot.png", :id=>"screenshot", :alt=>"Trenton" %>
+            <!-- close product image -->      
+            
+            </div>													
+    	</div>
+    </section><!-- close product section -->
+    
+    <div class="clear"></div>
+    
+    <!-- information section -->
+	<section id="information-section" class="information-section">
+		<div class="grid-container">
+        	
+            <!-- icon box 1 -->
+			<div class="grid-33 mobile-grid-100 tablet-grid-100">
+				<i class="icon-table icon-4x main-icon"></i> 
+                <div class="info"> 
+                <h3>Easy Excel upload</h3>
+				<p>Upload historical data and get set up in less than 1 minute or have our customer experience team do it for you</p>
+                </div>
+			</div><!-- close icon box -->
+            
+            <!-- icon box 2 -->
+			<div class="grid-33 mobile-grid-100 tablet-grid-100">
+                <i class="icon-bullseye icon-4x main-icon"></i> 
+                <div class="info">
+                <h3>Accurate to your knowledge</h3>
+				<p>Make forecasts based the information you know, whether it’s a high-level estimate or granular detail</p>
+               </div>	
+			</div><!-- close icon box -->
+            
+            <!-- icon box 3 -->
+			<div class="grid-33 mobile-grid-100 tablet-grid-100">
+                <i class="icon-group icon-4x main-icon"></i> 
+                <div class="info">
+                <h3>Manage team forecasts</h3>
+				<p>Open up forecasting to team members and manage forecast changes with revision control and approval functionality</p>
+                </div>
+			</div><!-- close icon box -->
+			
+		</div><!-- close grid-container -->
+	</section><!-- close information section -->
+    
+    <div class="clear"></div>
+
+	<!-- testimonial section -->
+	<section id="testimonial" class="testimonial-section">
+		<div class="grid-container">
+					
+			<div class="grid-100 mobile-grid-100 tablet-grid-100">
+            	
+                <!-- entry header -->
+            	<header class="entry-header">
+                    <h2 class="entry-title">You're in good company</h2>
+                </header><!-- close entry header -->
+     
+			</div>
+            
+            <!-- testimonial 1 -->
+            <div class="grid-33">
+            	<figure class="testimonial_image">
+            		<%= image_tag "testimonial-1.jpg", :alt=>"t1" %>
+                </figure>
+                
+            	<div class="testimonial">
+            	<p>"Forecaster is what we wish we had years ago. [We] used to spend days each month on updating and editing forecasts that had terrible accuracy. Now we get a more accurate forecast in a tenth of the time"</p>
+                <span class="testimonial-name">- <strong>J. Evans</strong>, Americo Flooring</span>
+            	</div>
+            </div>
+            <!-- close testimonial -->
+            
+            <!-- testimonial 2 -->
+            <div class="grid-33">
+            <figure class="testimonial_image">
+            		<%= image_tag "testimonial-2.jpg", :alt=>"t2" %>
+                </figure>
+                
+            	<div class="testimonial">
+                <p>"The revision control tools make collecting forecast input from the broader team incredibly easy. We can see the suggested changes, read the rationale, and make edits before approving forecast changes."</p>
+                <span class="testimonial-name">- <strong>P. Donaghy</strong>, Cosmo Motors</span>
+            	</div>
+            </div>
+            <!-- close testimonial -->
+            
+            <!-- testimonial 3 -->
+            <div class="grid-33">
+            <figure class="testimonial_image">
+            		<%= image_tag "testimonial-3.jpg", :alt=>"t3" %>
+                </figure>
+                
+            	<div class="testimonial">
+                <p>"It's straightforward and gets the job done. We can adjust forecasts on at overall level and get as detailed as by a customer's store location. Everything gets captured!"</p>
+                <span class="testimonial-name">- <strong>B. Potter</strong>, American Lumber Yard</span>
+            	</div>  
+            </div>
+            <!-- close testimonial -->
+  
+		</div><!-- close container -->
+	</section><!-- close testimonial section -->
+    
+    <div class="clear"></div>
+    
+    <!-- Call to Action bottom section -->
+    <section id="cta" class="cta">
+		<div class="grid-container">
+        	    
+                <!-- CTA -->  
+            	<div class="grid-50 mobile-grid-100 tablet-grid-100">
+                    <h2 class="cta-title">Sign up for early access today!</h2>
+                    <p class="cta-slogan">There's no risk, no obligation, and no credit card required.</p>
+                </div>
+                
+                <div class="grid-45 prefix-5 mobile-grid-100 tablet-grid-100">
+              	<a class="product-link cta-button" style="color:#fff;" href="#">Sign up for early access<i class="icon-user"></i></a>
+           		</div>
+                <!-- close CTA --> 	
+           
+		</div><!-- close grid container -->
+	</section><!-- close parallax banner 1-->
+    
+    <div class="clear"></div>
+
+	<!-- Footer Section -->
+	<footer class="footer">
+		<div class="grid-container">
+        
+			<div class="grid-75 hide-on-mobile hide-on-tablet">
+            
+                <!-- footer site branding -->
+                <div class="site-branding">	
+                    <h1><a href="index.htm">
+                    	<i class="icon-bar-chart main-icon" style="color: #1caf9a;"></i> 
+                    	<span class="forecaster-logo-footer">Forecaster</span></a></h1>
+                </div><!-- close footer site branding -->
+       </div>
+       <div class="grid-25 hide-on-mobile hide-on-tablet">
+            <p class="copyright">Copyright &copy; 2012 <a href="http://unitedthemes.com">Get Forecaster LLC</a>. <br>All rights reserved.</p>
+            
+            </div>
+      </div><!-- close container -->
+       
+          
+            
+             <!-- mobile copyright -->
+            <div class="hide-on-desktop mobile-grid-100 tablet-grid-100">
+            	<div class="mobile-copyright">
+                	<p class="copyright">Copyright &copy; 2013 <a href="http://unitedthemes.com">UNITED THEMES</a>. All rights reserved.</p>
+                </div>
+            </div>
+            <!-- close mobile copyright -->           
+         	
+		</div><!-- close container -->
+	</footer><!-- close footer -->
+
+<!-- Load Javascript
+  	================================================== -->
+  	<% javascript_include_tag "classie" %>
+  	<% javascript_include_tag "cbpScroller" %>
+  	<% javascript_include_tag "jquery.custom" %>
+	
+    <script type="text/javascript">
+    /* <![CDATA[ */
+		
+		(function($){
+	
+		"use strict";
+    		
+			$(document).ready(function(){
+	
+
+			});
+			
+		})(jQuery);
+		
+	 /* ]]> */	
+    </script>
+    
+<!-- End Document
+================================================== -->
+</body>
+</html>
