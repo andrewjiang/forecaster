@@ -1,3 +1,7 @@
+<script>
+    mixpanel.track("Landing page loaded");
+</script>
+
 	<!-- product section -->
     <section class="product">
     	<div class="grid-container">
@@ -16,7 +20,7 @@
                            
                                 <%= f.text_field :referer, :style=>"display:none;", :value=> request.url.split('/').last %>
                             
-                                <%= button_tag( :class=>"product-link") do %>
+                                <%= button_tag( :class=>"product-link", :id=>"submit-email") do %>
                                     Sign up for early access<i class="icon-user"></i>
                                 <% end %>
                           
