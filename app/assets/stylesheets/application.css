@@ -9,5 +9,12 @@
  * compiled file, but it's generally better to create a new file per style scope.
  *
  *= require_self
- *= require_tree .
+ *= require font-awesome.css
+ *= require home.css.scss
+ *= require reset.css
+ *= require scaffolds.css.scss
+ *= require signups.css.scss
+ *= require style.css
+ *= require ut-fontface.css
+ *= require ut-responsive-grid.css
  */

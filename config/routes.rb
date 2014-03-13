@@ -1,4 +1,6 @@
 Forecaster::Application.routes.draw do
+  devise_for :admin_users, ActiveAdmin::Devise.config
+  ActiveAdmin.routes(self)
   resources :signups
 
   root to: "home#index"
