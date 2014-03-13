@@ -64,6 +64,16 @@
 	background-color: transparent;
 	color: #1d2939;
 }
+@media screen and (max-width: 767px) {
+	.referral-div{
+	padding: 20px !important;
+	background-color: rgba(52, 152, 219, 0.8);
+	font-size: 18px;
+	padding: 0;
+	margin: 0;
+	display: inline-block;
+}
+}
 .site-branding a:hover{
 	background-color: #454545 !important;
 }
