@@ -28,10 +28,10 @@ class SignupsController < ApplicationController
 
     respond_to do |format|
       if @signup.save
-        format.html { redirect_to @signup, notice: 'Signup successful!' }
+        format.html { redirect_to @signup, notice: 'Signup successful! You\'re now in queue on our early access list.'}
         format.json { render action: 'show', status: :created, location: @signup }
       else
-        format.html { render action: 'new' }
+        format.html { render action: '' }
         format.json { render json: @signup.errors, status: :unprocessable_entity }
       end
     end
