@@ -20,7 +20,7 @@
                            
                                 <%= f.text_field :referer, :style=>"display:none;", :value=> request.url.split('/').last %>
                             
-                                <%= button_tag( :class=>"product-link", :id=>"submit-email") do %>
+                                <%= button_tag( :class=>"product-link", :id=>"submit-email", :onclick => "mixpanel.track('Submit clicked');") do %>
                                     Sign up for early access<i class="icon-user"></i>
                                 <% end %>
                           
