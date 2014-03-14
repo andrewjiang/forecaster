@@ -61,11 +61,14 @@
 	font-weight: 700;
 }
 .referral-div a:hover{
-	background-color: transparent;
+	background-color: transparent !important;
 	color: #1d2939;
 }
+.product-slogan a:hover{
+	background-color: transparent !important;
+}
 #ut-navigation a:hover{
-	background-color: transparent;
+	background-color: transparent !important;
 }
 @media screen and (max-width: 767px) {
 	.referral-div{
